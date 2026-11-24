@@ -277,4 +277,16 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
   .header > div:first-child{flex-basis:100%}
 }
 
+
+/* Finance installed mode: preserve mobile safe areas and full-screen app spacing. */
+@media (display-mode: standalone){
+  .sidebar{padding-top:max(25px,env(safe-area-inset-top));}
+  .header{padding-top:calc(27px + env(safe-area-inset-top));}
+  .mobile-nav{padding-bottom:calc(10px + env(safe-area-inset-bottom));}
+}
+@media (display-mode: standalone) and (max-width:740px){
+  .header{padding-top:calc(18px + env(safe-area-inset-top));}
+  #app{padding-bottom:calc(105px + env(safe-area-inset-bottom));}
+}
+
 @media print{body{background:white;color:#111}aside,.header .actions,.mobile-nav,button,.dialog-actions{display:none!important}.panel{background:#fff;color:#111;border:1px solid #ddd}.money{color:#111}.content{width:100%}}
