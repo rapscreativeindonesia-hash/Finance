@@ -11,19 +11,20 @@
 <script src="/app.js" defer></script>
 </head>
 <body>
+<div class="ambient-art" aria-hidden="true"><div class="ambient-mesh"></div><span class="ambient-orb ambient-orb-a"></span><span class="ambient-orb ambient-orb-b"></span><span class="ambient-orb ambient-orb-c"></span></div>
 <div class="shell">
 <aside class="sidebar">
- <div class="brand"><span class="logo">▥</span><span><strong>FINANCE</strong><small>KEUANGAN PRIBADI</small></span></div>
+ <div class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 33.5V25a4 4 0 0 1 4-4h1a4 4 0 0 1 4 4v8.5M21 33.5V17a4 4 0 0 1 4-4h1a4 4 0 0 1 4 4v16.5M32 33.5V10a4 4 0 0 1 4-4h1a4 4 0 0 1 4 4v23.5" stroke="currentColor" stroke-width="3.3" stroke-linecap="round"/><path d="M8 39h34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".65"/></svg></span><span><strong>FINANCE</strong><small>KEUANGAN PRIBADI</small></span></div>
  <p class="side-caption">MENU</p><nav id="nav"></nav>
  <div class="side-footer">● Data disimpan di perangkat<br><small>Ekspor backup secara berkala</small></div>
 </aside>
 <div class="content">
-<header class="header"><div><small>PERSONAL FINANCE TRACKER</small><h1 id="title">Beranda</h1><p id="subtitle"></p></div><div class="actions"><input id="month" type="month" aria-label="Pilih periode"><button id="mask" class="btn ghost" aria-label="Sembunyikan nominal">◉</button><div class="avatar">RH</div></div></header>
+<header class="header"><div><small>PERSONAL FINANCE TRACKER</small><h1 id="title">Beranda</h1><p id="subtitle"></p></div><div class="actions"><input id="month" type="month" aria-label="Pilih periode"><button id="mask" class="btn ghost icon-btn" aria-label="Sembunyikan nominal" title="Sembunyikan atau tampilkan nominal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.7-7 10-7 10 7 10 7-3.7 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button><div class="avatar">RH</div></div></header>
 <main id="app"></main>
 <nav id="mobile-nav" class="mobile-nav"></nav>
 </div>
 </div>
-<dialog id="dialog"><form id="form"><div class="between"><h2 id="dialog-title">Tambah</h2><button type="button" id="close" class="close">×</button></div><div id="fields"></div><div class="dialog-actions"><button type="button" id="cancel" class="btn ghost">Batal</button><button class="btn primary" type="submit">Simpan</button></div></form></dialog>
+<dialog id="dialog"><form id="form"><div class="between"><h2 id="dialog-title">Tambah</h2><button type="button" id="close" class="close" aria-label="Tutup dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg></button></div><div id="fields"></div><div class="dialog-actions"><button type="button" id="cancel" class="btn ghost">Batal</button><button class="btn primary" type="submit">Simpan</button></div></form></dialog>
 <input type="file" id="import" accept=".json,application/json" hidden>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
