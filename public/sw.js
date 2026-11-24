@@ -1,7 +1,7 @@
 'use strict';
-const CACHE_NAME = 'finance-static-2026-11-24-v1';
+const CACHE_NAME = 'finance-static-2026-11-24-v2';
 const APP_SHELL = [
-  '/', '/index.html', '/style.css?v=4', '/ui-icons.js?v=2',
+  '/', '/index.html', '/style.css?v=5', '/ui-icons.js?v=2',
   '/report-pdf.js?v=1', '/app.js?v=3', '/favicon.svg',
   '/manifest.webmanifest', '/icons/finance-180.png',
   '/icons/finance-192.png', '/icons/finance-512.png'
